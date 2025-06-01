@@ -15,20 +15,20 @@ A visually engaging and interactive animated landing page built with HTML, CSS, 
 ## 📁 Folder Structure
 
 /
-├── index.html
-├── home.html
-├── Assets/
-│ ├── css/
-│ │ └── style.css
-│ ├── js/
-│ │ └── main.js
-│ ├── HomePage/
-│ │ └── ImageAssets/
-│ │    └── one.jpg
-│ │    └── two.jpg
-│ │    └── three.jpg
-│ │    └── four.jpg
-│ │ └── info/
+├── index.html <br>
+├── home.html <br>
+├── Assets/ <br>
+│ ├── css/ <br>
+│ │ └── style.css <br>
+│ ├── js/ <br>
+│ │ └── main.js <br>
+│ ├── HomePage/ <br>
+│ │ └── ImageAssets/ <br>
+│ │    └── one.jpg <br>
+│ │    └── two.jpg <br>
+│ │    └── three.jpg <br>
+│ │    └── four.jpg <br>
+│ │ └── info/ 
 
 
 
