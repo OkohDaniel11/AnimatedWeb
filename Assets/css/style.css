@@ -383,7 +383,12 @@ nav ul li a:hover::before {
     }
     
     .bannerHeader h1 {
-        font-size: 70px;
+        font-size: 62px;
+    }
+
+    .bannerHeader h1 span {
+        font-size: 50px;
+        transform: translateX(0);
     }
 
     .info p {
