@@ -54,4 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cursorChar: '|',
         loop: true,
     });
+    
+    const nxtBttn = document.querySelector('.bannerHeader').addEventListener('click', () => {
+        
+        setTimeout(() => {
+            window.location.href = 'home.html'
+        })
+    })
 })

@@ -192,16 +192,31 @@ nav ul li a:hover::before {
 .bannerHeader {
     position: absolute;
     top: 30%;
-    left: 36%;
+    left: 33%;
     z-index: 50;
-    height: 60px;
+    height: 200px;
+    overflow: hidden;
 }
 
 .bannerHeader h1 {
-    font-size: 100px;
+    font-size: 88px;
     font-family: 'Petit Formal Script';
     font-weight: 100;
     color: rgb(240, 110, 131);
+    cursor: pointer;
+}
+
+.bannerHeader h1 span {
+    font-size: 70px;
+    position: relative;
+    left: -6%;
+    transform: translateX(200%);
+    transition: transform 0.6s ease;
+    display: inline-block; /* Required to transform properly */
+}
+
+.bannerHeader h1:hover span {
+    transform: translateX(0);
 }
 
 .info p {
