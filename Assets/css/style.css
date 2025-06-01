@@ -1,0 +1,431 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    color: white;
+}
+
+/* ===========
+    Start of Head Content
+    ========== */
+
+.headContent {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.headContent header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+
+/*Logo*/
+
+header .logo {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.logo a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: rgb(240, 110, 131);
+}
+
+/*individual placement for logo*/
+
+.delayani {
+    text-transform: capitalize;
+    display: inline-block;
+    animation: slidein 2s ease-out ;
+}
+
+.logo .flline {
+    text-transform: lowercase;
+    display: inline-block;
+    animation: slidein 1.5s ease-out ;
+}
+
+.logo .slline {
+    text-transform: lowercase;
+    display: inline-block;
+    animation: slidein 2.5s ease-out ;
+}
+
+/*KeyFrames of slideIn*/
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-400%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*Menu Button*/
+.menuIc {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/*Hover Menu/Close Button*/
+
+.menuIc:hover {
+    color: rgb(240, 110, 131);
+}
+
+.closeIc:hover {
+    color: red;
+}
+
+/*Close Button*/
+
+.closeIc {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+}
+
+/*Nav Container*/
+
+.navContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+/*Active Function*/
+
+.navContainer.active {
+    transform: translateX(0);
+}
+
+nav ul {
+    display: grid;
+    position: relative;
+    top: 40px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 70px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Petit Formal Script';
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(234, 69, 96);
+    transition: width 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(240, 110, 131);
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* ===========
+    End of Head Content
+    ========== */
+
+
+/* ===========
+    Start of Banner Content
+    ========== */
+
+.Banner {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bannerHeader {
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    z-index: 50;
+    height: 60px;
+}
+
+.bannerHeader h1 {
+    font-size: 100px;
+    font-family: 'Petit Formal Script';
+    font-weight: 100;
+    color: rgb(240, 110, 131);
+}
+
+.info p {
+    font-size: 25px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Petit Formal Script';
+}
+
+.fey {
+    position: absolute;
+    top: 68%;
+    left: 13%;
+}
+.ley {
+    position: absolute;
+    top: 32%;
+    left: 34%;
+}
+.vey {
+    position: absolute;
+    top: 68%;
+    left: 53%;
+}
+.rey {
+    position: absolute;
+    top: 32%;
+    left: 75%;
+}
+
+.underline-text {
+  color: rgb(240, 110, 131);
+  font-family: 'Petit Formal Script';
+}
+
+.typed-cursor {
+  color: rgb(240, 110, 131);          /* Change color */
+  font-weight: bold;     /* Make it thicker */
+  font-size: 1.2em;      /* Slightly bigger */
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/*Imag Container*/
+
+.imgContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.imgContainer div {
+    height: 300px;
+    width: 240px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.imgContainer div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.imgContainer div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.ImgOne {
+    position: relative;
+    top: 120px;
+    left: 12%;
+}
+.ImgTwo {
+    position: relative;
+    top: 280px;
+    left: 14%;
+}
+.ImgThree {
+    position: relative;
+    top: 120px;
+    left: 16%;
+}
+.ImgFour {
+    position: relative;
+    top: 280px;
+    left: 18%;
+}
+
+/* ===========
+    End of Banner Content
+    ========== */
+
+/* ===========
+    Media Queries
+    ========== */
+
+/* max-width: 600px first */
+@media screen and (max-width: 600px) {
+    /* general mobile styles */
+
+    .headContent {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .headContent header {
+        height: 100px;
+        width: 100%;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .menuIc {
+        font-size: 50px;
+        right: 8%;
+    }
+
+    .navContainer {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .navContainer.active {
+        transform: translateX(0);
+    }
+
+    nav ul {
+        height: 100%;
+        top: 120px;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 30px 0;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 55px;
+        font-family: 'Petit Formal Script';
+    }
+
+    nav ul li a:hover::before {
+        width: 0;
+    }
+
+    .bannerHeader {
+        position: absolute;
+        top: 38%;
+        left: 15%;
+    }
+    
+    .bannerHeader h1 {
+        font-size: 70px;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    .fey {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+    }
+
+    .ley {
+        position: absolute;
+        top: 38%;
+        left: 10%;
+    }
+
+    .vey {
+        position: absolute;
+        top: 58%;
+        left: 48%;
+    }
+
+    .rey {
+        position: absolute;
+        top: 78%;
+        left: 14%;
+        width: 29%;
+    }
+
+    .imgContainer div {
+        height: 220px;
+        width: 150px;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+
+    .ImgOne {
+        position: absolute;
+        top: 120px;
+        left: 8%;
+    }
+    .ImgTwo {
+        position: absolute;
+        top: 300px;
+        left: 58%;
+    }
+    .ImgThree {
+        position: absolute;
+        top: 480px;
+        left: 8%;
+    }
+    .ImgFour {
+        position: absolute;
+        top: 650px;
+        left: 58%;
+    }
+    
+}
