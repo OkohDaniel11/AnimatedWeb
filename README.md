@@ -2,6 +2,10 @@
 
 A visually engaging and interactive animated landing page built with HTML, CSS, and JavaScript. This project features custom animations, a responsive navigation menu, dynamic typed text, and stylish hover effects to create a modern, interactive user experience.
 
+## 🧪 Demo
+
+🔗 [Live Demo Here](https://okohdaniel11.github.io/AnimatedWeb/)
+
 ## ✨ Features
 
 - 🖋️ Animated logo with sliding character effects
